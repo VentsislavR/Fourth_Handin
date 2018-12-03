@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GeneralMasterPage.master.cs" Inherits="MovieDB.GeneralMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+	<title>Movie Database</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link href="css/main.css" rel="stylesheet" />
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="Default.aspx">LOGO</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="Default.aspx">Best Rated</a></li>
+				<li><a href="Movies.aspx">Movies</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<form id="MasterPageForm" runat="server">
+		<div>
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+			
+			</asp:ContentPlaceHolder>
+		</div>
+	</form>
+
+	<%--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>--%>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
